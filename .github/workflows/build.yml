@@ -40,6 +40,9 @@ jobs:
           --mainclass io.github.inggame.DesktopLauncher \
           --vmargs Xmx1G \
           --output out-mac
+      - uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r mac.zip out-mac
 
       - name: release
         uses: marvinpinto/action-automatic-releases@latest
@@ -47,5 +50,5 @@ jobs:
           title: "Build#${{github.run_number}}"
           automatic_release_tag: "${{github.run_number}}"
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          files: out-mac/**
+          files: mac.zip
           prerelease: false
