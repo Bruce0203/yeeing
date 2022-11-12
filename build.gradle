@@ -19,9 +19,6 @@ buildscript {
 allprojects {
     apply plugin: "eclipse"
     apply plugin: "java"
-    jar {
-        archiveVersion = ''
-    }
 
     version = '1.0'
     ext {
