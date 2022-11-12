@@ -37,7 +37,7 @@ jobs:
           --useZgcIfSupportedOs \
           --executable yeeing \
           --classpath desktop/build/libs/desktop.jar \
-          --mainclass io.github.inggame.DesktopLauncher \
+          --mainclass io.github.bruce0203.DesktopLauncher \
           --vmargs Xmx1G \
           --output out-mac
       - uses: montudor/action-zip@v1
