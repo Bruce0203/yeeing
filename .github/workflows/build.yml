@@ -27,7 +27,7 @@ jobs:
 
       - run: git tag ${{github.run_number}}
       - name: Execute Gradle build
-        run: ./gradlew :plugins:shadowJar
+        run: ./gradlew :desktop:dist
 
       - run: |
           wget -O packr-all.jar https://github.com/libgdx/packr/releases/download/4.0.0/packr-all-4.0.0.jar
