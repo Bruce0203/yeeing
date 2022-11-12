@@ -39,7 +39,6 @@ jobs:
           --classpath desktop/build/libs/desktop.jar \
           --mainclass io.github.inggame.DesktopLauncher \
           --vmargs Xmx1G \
-#          --resources src/main/resources path/to/other/assets \
           --output out-mac
 
       - name: release
